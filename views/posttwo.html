@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title>健康云运动健康现状评估问卷</title>
+    <script type="text/javascript">
+        function showHide1() {
+            var state = "";
+            var ele = document.getElementsByName("P1");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select1").style.display="block";
+                document.getElementById("select2").style.display="block";
+            }
+            if(state==="不是。"){
+                document.getElementById("select1").style.display="none";
+                document.getElementById("P2").value="0";
+                document.getElementById("select2").style.display="none";
+                document.getElementById("P3").value="0";
+            }
+        }
+
+        function showHide2() {
+            var state = "";
+            var ele = document.getElementsByName("P7");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select3").style.display="block";
+                document.getElementById("select4").style.display="block";
+            }
+            if(state==="不是。"){
+                document.getElementById("select3").style.display="none";
+                document.getElementById("P8").value="0";
+                document.getElementById("select4").style.display="none";
+                document.getElementById("P9").value="0";
+            }
+        }
+
+        function showHide3() {
+            var state = "";
+            var ele = document.getElementsByName("P4");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select5").style.display="block";
+                document.getElementById("select6").style.display="block";
+            }
+            if(state==="不是。"){
+                document.getElementById("select5").style.display="none";
+                document.getElementById("P5").value="0";
+                document.getElementById("select6").style.display="none";
+                document.getElementById("P6").value="0";
+            }
+        }
+
+        function showHide4() {
+            var state = "";
+            var ele = document.getElementsByName("P10");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select7").style.display="block";
+                document.getElementById("select8").style.display="block";
+//                document.getElementById("f").style.display="none";
+            }
+            if(state==="不是。"){
+                document.getElementById("select7").style.display="none";
+                document.getElementById("P11").value="0";
+                document.getElementById("select8").style.display="none";
+                document.getElementById("P12").value="0";
+            }
+
+            var states = "";
+            var eles = document.getElementsByName("P13");
+            for( i = 0;i<eles.length;i++){
+                if(eles[i].checked)states = eles[i].value;
+            }
+
+            if(state==="不是。"&&states==="不是。"){
+                document.getElementById("f").style.display="block";
+                document.getElementById("f1").style.display="none";
+
+
+            }else {
+                document.getElementById("f").style.display = "none";
+                document.getElementById("f1").style.display="block";
+            }
+        }
+
+        function showHide5() {
+            var state = "";
+            var ele = document.getElementsByName("P13");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select9").style.display="block";
+                document.getElementById("select10").style.display="block";
+
+            }
+            if(state==="不是。"){
+                document.getElementById("select9").style.display="none";
+                document.getElementById("P14").value="0";
+                document.getElementById("select10").style.display="none";
+                document.getElementById("P15").value="0";
+            }
+
+            var states = "";
+            var eles = document.getElementsByName("P10");
+            for( i = 0;i<eles.length;i++){
+                if(eles[i].checked)states = eles[i].value;
+            }
+
+            if(state==="不是。"&&states==="不是。"){
+                document.getElementById("f").style.display="block";
+                document.getElementById("f1").style.display="none";
+
+
+            }else {
+                document.getElementById("f").style.display = "none";
+                document.getElementById("f1").style.display="block";
+            }
+
+        }
+
+
+        function showHide6() {
+            var state = "";
+            var ele = document.getElementsByName("P17");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select11").style.display="block";
+                document.getElementById("select12").style.display="block";
+            }
+            if(state==="不是。"){
+                document.getElementById("select11").style.display="none";
+                document.getElementById("P18").value="0";
+                document.getElementById("select12").style.display="none";
+                document.getElementById("P19").value="0";
+            }
+        }
+
+    </script>
+      <!--<link rel="stylesheet" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css">-->
+      <!--<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>-->
+      <!--<script type="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>-->
+    <style type="text/css">
+      h1{
+          text-align: center;
+      }
+      /*body{*/
+          /*background-color: #87CEFA;*/
+      /*}*/
+      fieldset {
+         width:80%;
+         border:2px solid #4169E1;
+         margin:auto;
+         /*padding: 10px;*/
+      }
+
+      legend {
+         font-weight: bold;
+         font-size: 125%;
+      }
+
+      label.question  {
+         width: 225px;
+         float: left;
+         text-align: left;
+         font-weight: bold;
+      }
+
+      span.question  {
+         font-weight: bold;
+      }
+
+      input, textarea, select {
+         border: 1px solid #000;
+         padding: 3px;
+      }
+
+
+      p,input,label{
+          clear: both;
+      }
+
+      p{
+          line-height:200%
+      }
+
+      div.img {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
+      }
+
+      div.img:hover {
+          border: 1px solid #777;
+      }
+
+      div.img img {
+          width: 100%;
+          height: auto;
+      }
+
+      div.desc {
+          padding: 15px;
+          text-align: center;
+      }
+
+      input.but {
+          margin-top: 20px;
+          margin-left: 45%;
+          width: 10%;
+          font-size: 125%;
+          /*text-align: center;*/
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>健康云运动健康现状评估问卷</h1>
+
+    <fieldset>
+        <legend>您好</legend>
+        <p>
+            <span>欢迎参加“健康云运动健康现状评估”的调查工作！您的运动健康我们将与您一同关注！</span><br>
+            <span>本次调查采用匿名形式，我们将严格报名你的信息，你可以放心作答。</span><br>
+            <span>下面我要询问你通常每周做各类体力活动所花费的时间。请您耐心作答。</span><br>
+        </p>
+    </fieldset>
+    <form name="gbForm" method="post" action="/upload">
+
+    <fieldset>
+       <legend>个人信息</legend>
+        <p>
+            <span>下面我们将收集您的一些个人信息，以便我们及时将您的运动健康状况反馈。</span><br>
+        </p>
+       <p><label class="question" for="P26">你的性别？</label>
+       <input type="text" id="P26" name="P26"
+              placeholder="Enter your real sex."
+              size="50" required autofocus /></p>
+
+       <p><label class="question" for="P27">你的常用手机号？</label>
+       <input type="tel" id="P27" name="P27"
+              placeholder="Please use a real one!"
+              size="50"  required pattern="[0-9]{11}"/></p>
+
+        <p><label class="question" for="P28">你的职业？</label>
+       <input type="text" id="P28" name="P28"
+              placeholder="Please use a real one!"
+              size="50" required /></p>
+
+        <p><label class="question" for="P29">你的身高(cm)？</label>
+       <input type="text" id="P29" name="P29"
+              placeholder="Please use a real one!"
+              size="50" required /></p>
+
+        <p><label class="question" for="P30">你的体重(kg)？</label>
+       <input type="text" id="P30" name="P30"
+              placeholder="Please use a real one!"
+              size="50" required /></p>
+
+    </fieldset>
+
+
+    <fieldset>
+       <legend>工作时的体力活动</legend>
+
+        <p>
+            <span>首先谈到工作中的体力活动。工作是指你必须完成的有酬或无酬工作，学习/培训，家务，收割食物/粮食，渔业或猎捕食物，以及找工作。</span><br>
+            <span>关于剧烈活动，是指高负荷的体力活动并引起呼吸心跳显著增加。中等强度的活动是指一定负荷的体力活动并引起呼吸心跳轻度增加。</span><br>
+            <span>下面我们提供一些引起剧烈活动的工作示例，请你结合自身判断自己的工作是否会含有剧烈活动。</span><br>
+        </p>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/jh/1.jpg">
+                    <img src="images/jh/1.jpg" alt="搬运重物" width="300" height="200">
+                </a>
+                <div class="desc">搬运重物</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/jh/2.jpg">
+                    <img src="images/jh/2.jpg" alt="铲沙" width="300" height="200">
+                </a>
+                <div class="desc">铲沙</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/jh/3.jpg">
+                    <img src="images/jh/3.jpg" alt="运送水泥" width="300" height="200">
+                </a>
+                <div class="desc">运送水泥</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/jh/4.jpg">
+                    <img src="images/jh/4.jpg" alt="伐木" width="300" height="200">
+                </a>
+                <div class="desc">伐木</div>
+            </div>
+        </div>
+
+        <p>
+            <span>除上述图示外，需要做剧烈活动以致引起呼吸和心跳显著的工作还有如下：</span><br>
+            <span>林业（砍伐,搬运木材），锯硬木，耕作，割庄稼（甘蔗），园艺（挖掘），磨（用杵），操劳（挖沙），装载家具（炉灶，冰箱），健身指导，体育健美操指导，分拣快递包裹（快节奏），蹬三轮车等等......</span><br>
+        </p>
+
+        <HR>
+
+        <p><span class="question">P1	你的工作需要做剧烈活动以致引起呼吸和心跳显著增加 [ 如搬运或举重物、挖掘或建筑工作 ] 时间至少持续10分钟吗？</span><br/></p>
+       <p><input type="radio" id="P1-Y" name="P1"
+              value="是的。" onclick="showHide1()" />
+       <label for="P1-Y">是的。</label><br/>
+
+       <input type="radio" id="P1-N" name="P1"
+              value="不是。" onclick="showHide1()" />
+        <label for="P1-N">不是。(跳转P4）</label><br/></p>
+
+      
+
+       <p id="select1"><label for="P2"><span class="question">P2	你的工作中通常每周有多少天会做剧烈活动？</span><br/></label>
+       <input type="number" id="P2" name="P2"
+            min="0" max="7" step="1" required/>天</p>
+
+       <p id="select2"><span class="question">P3	你通常每天工作中做多长时间的剧烈活动？
+       </span><br/>
+       <input type="number" id="P3" name="P3" min="0" max="24" step='0.5' required/>
+           <label for="P3">小时</label><br/></p>
+
+        <HR>
+
+        <p>
+            <span>关于中等强度的活动是指一定负荷的体力活动并引起呼吸心跳轻度增加。</span><br>
+            <span>下面我们提供一些引起中等活动的工作示例，请你结合自身判断自己的工作是否会含有中等强度的活动。</span><br>
+        </p>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/jm/1.jpg">
+                    <img src="images/jm/1.jpg" alt="采摘" width="300" height="200">
+                </a>
+                <div class="desc">采摘</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/jm/2.jpg">
+                    <img src="images/jm/2.jpg" alt="洗地" width="300" height="200">
+                </a>
+                <div class="desc">洗地</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/jm/3.jpg">
+                    <img src="images/jm/3.jpg" alt="送外卖" width="300" height="200">
+                </a>
+                <div class="desc">送外卖</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/jm/4.jpg">
+                    <img src="images/jm/4.jpg" alt="种植" width="300" height="200">
+                </a>
+                <div class="desc">种植</div>
+            </div>
+        </div>
+
+
+        <p>
+            <span>除上述图示外，需要做中等强度活动引起呼吸和心跳轻度增加的工作还有如下：</span><br>
+            <span>清洁（吸尘、拖地、抛光、擦、扫、熨烫），洗（打刷地毯、拧干衣服（用手），园艺，挤奶（用手），种植和收割庄稼，挖干土（用铲子），织造，木工（凿、锯木），混合水泥（铲），劳动（推装手推车，操作电钻），头上负载的行走，打水，饲养动物等等......</span><br>
+        </p>
+
+
+       <p><span class="question">P4	你的工作需要做引起呼吸和心跳轻度增加的中等强度活动，如快步走 [ 搬运较轻的物品 ] 时间至少持续10分钟吗？</span><br/></p>
+
+
+
+       <p><input type="radio" id="P4-Y" name="P4"
+              value="是的。" onclick="showHide3()"/>
+       <label for="P4-Y">是的。</label><br/>
+
+       <input type="radio" id="P4-N" name="P4"
+              value="不是。" onclick="showHide3()" />
+        <label for="P4-N">不是。(跳转P7）</label><br/></p>
+
+       <p id="select5"><label for="P5"><span class="question">P5	你通常每周有多少天工作时做中等强度的活动？</span><br/></label>
+       <input type="number" id="P5" name="P5"
+            min="0" max="7" step="1" required/>天</p>
+
+        <p id="select6"><span class="question">P6 你通常每天工作时做多长时间中等强度的活动？
+       </span><br/>
+       <input type="number" id="P6" name="P6" min="0" max="24" step='0.5' required/>
+            <label for="P6">小时</label><br/></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>交通时的体力活动</legend>
+        <p>
+            <span>以下问题不包括上述工作时的体力活动。</span><br>
+            <span>现在我要询问你通常的交通方式。例如，去上班、去购物、去市场等。</span><br>
+        </p>
+        <p><span class="question">P7 你去某个地方时步行或骑自行车至少持续10分钟以上吗？</span><br/>
+            <input type="radio" id="P7-Y" name="P7"
+                   value="是的。" onclick="showHide2()"/>
+            <label for="P7-Y">是的。</label><br/>
+
+            <input type="radio" id="P7-N" name="P7"
+                   value="不是。" onclick="showHide2()"/>
+            <label for="P7-N">不是。(跳转P10）</label><br/>
+
+        <p id="select3"><label for="P8"><span class="question">P8 你通常每周有多少天从一个地点到另一地点步行或骑自行车至少持续10分钟以上?</span><br/></label>
+            <input type="number" id="P8" name="P8"
+                   min="0" max="7" step="1" required/>天</p>
+
+        <p id="select4"><span class="question">P9 你通常每天在交通方面花多少时间步行或骑自行车？
+       </span><br/>
+            <input type="number" id="P9" name="P9" min="0" max="24" step='0.5' required/>
+            <label for="P9">小时</label><br/></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>娱乐性体力活动</legend>
+        <p>
+            <span>以下问题不包括上述的工作和交通过程中的体力活动。</span><br>
+            <span>现在我询问你有关运动、健身和娱乐性体力活动（休闲）的问题。</span><br>
+            <span>下面我们提供一些高强度的运动示例，请你结合自身判断自己是否参与一些高强度运动。</span><br>
+        </p>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/wh/1.jpg">
+                    <img src="images/wh/1.jpg" alt="踢足球" width="300" height="200">
+                </a>
+                <div class="desc">踢足球</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/wh/2.jpg">
+                    <img src="images/wh/2.jpg" alt="长跑" width="300" height="200">
+                </a>
+                <div class="desc">长跑</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/wh/3.jpg">
+                    <img src="images/wh/3.jpg" alt="打篮球" width="300" height="200">
+                </a>
+                <div class="desc">打篮球</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/wh/4.jpg">
+                    <img src="images/wh/4.jpg" alt="橄榄球" width="300" height="200">
+                </a>
+                <div class="desc">橄榄球</div>
+            </div>
+        </div>
+
+        <p>
+            <span>除上述图示外，属于高强度运动的还有如下：</span><br>
+            <span>足球、橄榄球、网球、高强度有氧操、水上有氧操、芭蕾舞、快速游泳等等......</span><br>
+        </p>
+
+        <HR>
+
+        <p><span class="question">P10 你进行引起你呼吸和心跳显著增加的剧烈的运动、健身和娱乐性（休闲）体力活动并至少持续10分钟以上吗？</span><br/></p>
+
+            <p><input type="radio" id="P10-Y" name="P10"
+                   value="是的。" onclick="showHide4()"/>
+            <label for="P10-Y">是的。</label><br/>
+
+            <input type="radio" id="P10-N" name="P10"
+                   value="不是。" onclick="showHide4()"/>
+            <label for="P10-N">不是。(跳转P13）</label><br/></p>
+
+        <p id="select7"><label for="P11"><span class="question">P11 你通常每周有多少天进行剧烈的运动、健身和娱乐性（休闲）体力活动?</span><br/></label>
+            <input type="number" id="P11" name="P11"
+                   min="0" max="7" step="1" required/>天</p>
+
+        <p id="select8"><span class="question">P12 你通常每天花多长时间进行剧烈的运动、健身和娱乐性体力活动？
+       </span><br/>
+            <input type="number" id="P12" name="P12" min="0" max="24" step='0.5' required/>
+            <label for="P12">小时</label><br/></p>
+
+        <HR>
+        <p>
+            <span>下面我们提供一些中强度运动示例，请你结合自身判断自己是否参与一些中强度运动。</span><br>
+        </p>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/wm/1.jpg">
+                    <img src="images/wm/1.jpg" alt="沙滩排球" width="300" height="200">
+                </a>
+                <div class="desc">沙滩排球</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/wm/2.jpg">
+                    <img src="images/wm/2.jpg" alt="跳舞" width="300" height="200">
+                </a>
+                <div class="desc">跳舞</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/wm/3.jpg">
+                    <img src="images/wm/3.jpg" alt="竞走" width="300" height="200">
+                </a>
+                <div class="desc">竞走</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="img">
+                <a target="_blank" href="images/wm/4.jpg">
+                    <img src="images/wm/4.jpg" alt="骑马" width="300" height="200">
+                </a>
+                <div class="desc">骑马</div>
+            </div>
+        </div>
+
+        <p>
+            <span>除上述图示外，属于中强度运动的还有如下：</span><br>
+            <span>自行车、跑步、跳舞、骑马、太极、瑜伽、普拉提、低强度有氧运动、板球等等......</span><br>
+        </p>
+
+
+        <p><span class="question">P13 你进行引起你呼吸和心跳轻度增加的中等强度的运动、健身和娱乐性体力活动（休闲），如快步走（骑自行车、游泳、排球）至少持续10分钟或以上吗？</span><br/></p>
+
+          <p><input type="radio" id="P13-Y" name="P13"
+                   value="是的。" onclick="showHide5()"/>
+            <label for="P13-Y">是的。</label><br/>
+
+            <input type="radio" id="P13-N" name="P13"
+                   value="不是。" onclick="showHide5()"/>
+        <label for="P13-N">不是。(跳转P16）</label><br/></p>
+
+        <p id="select9"><label for="P14"><span class="question">P14 你通常每周有多少天进行中等强度的运动、健身和娱乐性（休闲）体力活动?</span><br/></label>
+            <input type="number" id="P14" name="P14"
+                   min="0" max="7" step="1" required/>天</p>
+
+        <p id="select10"><span class="question">P15 你通常每天花多少时间进行中等强度的运动、健身和娱乐性（休闲）体力活动？
+       </span><br/>
+            <input type="number" id="P15" name="P15" min="0" max="24" step='0.5' required/>
+            <label for="P15">小时</label><br/></p>
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>久坐习惯</legend>
+        <p>
+            <span>以下问题是关于工作时、在家里、交通过程中、会朋友时坐姿或靠着所花费的时间。</span><br>
+            <span>包括坐在桌前，与朋友坐在一起，乘坐轿车、公共汽车、火车，阅读，打扑克或者看电视，但不包括睡觉的时间。</span><br>
+        </p>
+        <p><span class="question">P16 你通常每天有多少时间坐着或靠着？</span><br/>
+            <input type="number" id="P16" name="P16" min="0" max="24" step='0.5' required/>
+            <label for="P16">小时</label><br/></p>
+
+    </fieldset>
+        <fieldset>
+         <legend>每天步数</legend>
+            <p>
+                <span>以下问题是关于您的智能手机每天帮您记录下的行走步数，如果您可以通过以下任何一种途径了解到您每天行走的步数，包括：智能手机自带的计步软件、微信运动、支付宝运动，行走记录等。</span><br>
+            </p>
+
+         <p><span class="question">P17 你是否可以通过智能手机得知您每天的行走步数？</span><br/></p>
+             <input type="radio" id="P17-Y" name="P17"
+                    value="是的。" onclick="showHide6()"/>
+             <label for="P17-Y">是的。</label><br/>
+
+             <input type="radio" id="P17-N" name="P17"
+                    value="不是。" onclick="showHide6()" />
+             <label for="P17-N">不是。(跳过P18,P19）</label><br/>
+
+         <p id="select11"><label for="P18"><span class="question">P18 你在正常工作日的每天的平均行走步数是多少步?</span><br/></label>
+             <input type="text" id="P18" name="P18" required/>步</p>
+
+         <p id="select12"><label for="P19"><span class="question">P19 你在周末的每天的平均行走步数是多少步?</span><br/></label>
+             <input type="text" id="P19" name="P19" required/>步</p>
+     </fieldset>
+
+
+
+    <fieldset id="f1">
+        <legend>未参加娱乐活动原因</legend>
+        <p><span class="question">当P10，P13均回答“否”时，才需作答本题。</span></p>
+    </fieldset>
+    <fieldset id="f">
+       <legend>未参加娱乐活动原因</legend>
+
+        <p>
+            <span>以下问题主要用于未参加娱乐性运动原因的探究。</span><br>
+            <span>如果在你的问卷中P10和P13都选择了不是，说明你平时基本不参加运动、健身和娱乐性体力活动（休闲），以下问题需要你从个人的角度分享不参加娱乐性运动的原因。</span><br>
+        </p>
+
+       <p><span class="question">P20 你不参与娱乐性运动的原因？</span><br/>
+           <input type="checkbox" id="P20-1" name="P20" value="1"/>
+           <label for="P20-1">1. 没有时间。 </label><br/>
+
+           <input type="checkbox" id="P20-2" name="P20" value="2" />
+           <label for="P20-2">2. 工作太累，没有精力。</label><br/>
+
+           <input type="checkbox" id="P20-3" name="P20" value="3" />
+           <label for="P20-2">3. 找不到合适的运动方式。</label><br/>
+
+           <input type="checkbox" id="P20-4" name="P20" value="4" />
+           <label for="P20-2">4. 身体原因，不适合运动。</label><br/>
+
+           <input type="checkbox" id="P20-5" name="P20" value="5" />
+           <label for="P20-2">5. 其他。</label><br/></p>
+
+        <p><span class="question">P21 您是否愿意参加娱乐性运动？</span><br/>
+            <input type="radio" id="P21-Y" name="P21"
+                   value="是的。" />
+            <label for="P21-Y">是的。</label><br/>
+
+            <input type="radio" id="P21-N" name="P21"
+                   value="不是。" />
+            <label for="P21-N">不是。</label><br/>
+    </fieldset>
+
+        <fieldset>
+            <legend>自我运动现状认知</legend>
+            <p>
+                <span>以下问题主要用于自我运动认知的探究。</span><br>
+                <span>主要涉及从你对自己运动现状上在一些维度上的认识。</span><br>
+            </p>
+            <p><label class="question" for="P22">P22 你平时运动的方式主要有？</label>
+                <input type="text" id="P22" name="P22"
+                       size="50" required autofocus /></p>
+
+            <p><span class="question">P23 你认为你平时的运动量是否达到了保证健康的基本水平？</span><br/>
+                <input type="radio" id="23-1" name="23" value="是的。">
+                <label for="23-1">是</label><br/>
+
+                <input type="radio" id="23-2" name="23" value="不是。">
+                <label for="23-2">否</label><br/></p>
+
+            <p><span class="question">P24 相比于同龄人的平均运动量，你认为你的运动量如何？</span><br/>
+                <input type="radio" id="24-1" name="24" value="高。">
+                <label for="24-1">高</label><br/>
+
+                <input type="radio" id="24-2" name="24" value="相等。">
+                <label for="24-2">相等</label><br/></p>
+
+                <input type="radio" id="24-3" name="24" value="低。">
+                <label for="24-3">低</label><br/></p>
+
+            <p><span class="question">P25 相比于身边的人（家人、同事、朋友）的平均运动量，你认为你的运动量如何？</span><br/>
+                <input type="radio" id="25-1" name="25" value="高。">
+                <label for="25-1">高</label><br/>
+
+                <input type="radio" id="25-2" name="25" value="相等。">
+                <label for="25-2">相等</label><br/></p>
+
+            <input type="radio" id="25-3" name="25" value="低。">
+            <label for="25-3">低</label><br/></p>
+        </fieldset>
+
+    <div id="buttons">
+      <input type="submit" class="but" value="提交" />
+    </div>
+
+    </form>
+  </body>
+</html>
