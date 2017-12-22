@@ -268,7 +268,7 @@ button.fs-continue,
 }
 
 .fs-fields input:focus {
-	background-color: #3b3f45; /* Fixes chrome bug with placeholder */
+	background-color: #2E8B57; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input:focus {
@@ -276,7 +276,7 @@ button.fs-continue,
 }
 
 .fs-form-overview .fs-fields input {
-	font-size: 1.2em;
+	font-size: 50%;
 }
 
 .fs-fields .fs-radio-custom input[type="radio"] {
@@ -299,7 +299,7 @@ button.fs-continue,
 	width: 30%;
 	text-align: center;
 	font-weight: 700;
-	font-size: 50%;
+	font-size: 150%;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 

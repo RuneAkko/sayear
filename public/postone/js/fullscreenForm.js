@@ -115,7 +115,7 @@
 		this.ctrls = createElement( 'div', { cName : 'fs-controls', appendTo : this.el } );
 
 		// continue button (jump to next field)
-		this.ctrlContinue = createElement( 'button', { cName : 'fs-continue', inner : 'Continue', appendTo : this.ctrls } );
+		this.ctrlContinue = createElement( 'button', { cName : 'fs-continue',appendTo : this.ctrls } );
 		this._showCtrl( this.ctrlContinue );
 
 		// navigation dots
@@ -136,11 +136,11 @@
 
 			// current field placeholder
 			this.ctrlFldStatusCurr = createElement( 'span', { cName : 'fs-number-current', inner : Number( this.current + 1 ) } );
-			this.ctrlFldStatus.appendChild( this.ctrlFldStatusCurr );
+			// this.ctrlFldStatus.appendChild( this.ctrlFldStatusCurr );
 
 			// total fields placeholder
 			this.ctrlFldStatusTotal = createElement( 'span', { cName : 'fs-number-total', inner : this.fieldsCount } );
-			this.ctrlFldStatus.appendChild( this.ctrlFldStatusTotal );
+			// this.ctrlFldStatus.appendChild( this.ctrlFldStatusTotal );
 			this._showCtrl( this.ctrlFldStatus );
 		}
 

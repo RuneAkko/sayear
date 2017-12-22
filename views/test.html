@@ -1,10 +1,597 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
+    <!-- css 文件 -->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+
+    <!-- jQuery 库 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script>
+
+    <!-- modernizr.js 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+    <title>健康云运动健康现状评估问卷</title>
+    <script type="text/javascript">
+        function showHide1() {
+            var state = "";
+            var ele = document.getElementsByName("P1");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select1").style.display="block";
+                document.getElementById("select2").style.display="block";
+            }
+            if(state==="不是。"){
+                document.getElementById("select1").style.display="none";
+                document.getElementById("P2").value="0";
+                document.getElementById("select2").style.display="none";
+                document.getElementById("P3").value="0";
+            }
+        }
+
+        function showHide2() {
+            var state = "";
+            var ele = document.getElementsByName("P7");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select3").style.display="block";
+                document.getElementById("select4").style.display="block";
+            }
+            if(state==="不是。"){
+                document.getElementById("select3").style.display="none";
+                document.getElementById("P8").value="0";
+                document.getElementById("select4").style.display="none";
+                document.getElementById("P9").value="0";
+            }
+        }
+
+        function showHide3() {
+            var state = "";
+            var ele = document.getElementsByName("P4");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select5").style.display="block";
+                document.getElementById("select6").style.display="block";
+            }
+            if(state==="不是。"){
+                document.getElementById("select5").style.display="none";
+                document.getElementById("P5").value="0";
+                document.getElementById("select6").style.display="none";
+                document.getElementById("P6").value="0";
+            }
+        }
+
+        function showHide4() {
+            var state = "";
+            var ele = document.getElementsByName("P10");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select7").style.display="block";
+                document.getElementById("select8").style.display="block";
+//                document.getElementById("f").style.display="none";
+            }
+            if(state==="不是。"){
+                document.getElementById("select7").style.display="none";
+                document.getElementById("P11").value="0";
+                document.getElementById("select8").style.display="none";
+                document.getElementById("P12").value="0";
+            }
+
+            var states = "";
+            var eles = document.getElementsByName("P13");
+            for( i = 0;i<eles.length;i++){
+                if(eles[i].checked)states = eles[i].value;
+            }
+
+            if(state==="不是。"&&states==="不是。"){
+                document.getElementById("f").style.display="block";
+                document.getElementById("f1").style.display="none";
+
+
+            }else {
+                document.getElementById("f").style.display = "none";
+                document.getElementById("f1").style.display="block";
+            }
+        }
+
+        function showHide5() {
+            var state = "";
+            var ele = document.getElementsByName("P13");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select9").style.display="block";
+                document.getElementById("select10").style.display="block";
+
+            }
+            if(state==="不是。"){
+                document.getElementById("select9").style.display="none";
+                document.getElementById("P14").value="0";
+                document.getElementById("select10").style.display="none";
+                document.getElementById("P15").value="0";
+            }
+
+            var states = "";
+            var eles = document.getElementsByName("P10");
+            for( i = 0;i<eles.length;i++){
+                if(eles[i].checked)states = eles[i].value;
+            }
+
+            if(state==="不是。"&&states==="不是。"){
+                document.getElementById("f").style.display="block";
+                document.getElementById("f1").style.display="none";
+
+
+            }else {
+                document.getElementById("f").style.display = "none";
+                document.getElementById("f1").style.display="block";
+            }
+
+        }
+
+
+        function showHide6() {
+            var state = "";
+            var ele = document.getElementsByName("P17");
+            for(var i = 0;i<ele.length;i++){
+                if(ele[i].checked)state = ele[i].value;
+            }
+            if(state==="是的。"){
+                document.getElementById("select11").style.display="block";
+                document.getElementById("select12").style.display="block";
+            }
+            if(state==="不是。"){
+                document.getElementById("select11").style.display="none";
+                document.getElementById("P18").value="0";
+                document.getElementById("select12").style.display="none";
+                document.getElementById("P19").value="0";
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $(".test").change(function() {
+                $("span.test1").text($(this).val());
+            })
+
+            setInterval(function() {
+                $("p.p2").text($(".input_2").val());
+            }, 0.01)
+        })
+    </script>
+
+    <style type="text/css">
+        h1{
+            text-align: center;
+        }
+        /*body{*/
+        /*background-color: #87CEFA;*/
+        /*}*/
+        fieldset {
+            width:80%;
+            border:2px solid #4169E1;
+            margin:auto;
+            /*padding: 10px;*/
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 125%;
+        }
+
+        label.question  {
+            width: 225px;
+            float: left;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        span.question  {
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            border: 1px solid #000;
+            padding: 3px;
+        }
+
+
+        p,input,label{
+            clear: both;
+        }
+
+        p{
+            line-height:200%
+        }
+
+        div.img {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.img:hover {
+            border: 1px solid #777;
+        }
+
+        div.img img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        input.but {
+            margin-top: 20px;
+            margin-left: 45%;
+            width: 10%;
+            /*font-size: 125%;*/
+            /*text-align: center;*/
+        }
+
+    </style>
 </head>
 <body>
+<h1>健康云运动健康现状评估问卷</h1>
 
+<fieldset>
+    <legend>您好</legend>
+    <p>
+        <span>欢迎参加“健康云运动健康现状评估”的调查工作！您的运动健康我们将与您一同关注！</span><br>
+        <span>本次调查采用匿名形式，我们将严格报名你的信息，你可以放心作答。</span><br>
+        <span>下面我要询问你通常每周做各类体力活动所花费的时间。请您耐心作答。</span><br>
+    </p>
+</fieldset>
+<form name="gbForm" method="post" action="/upload">
+
+    <fieldset>
+        <legend>个人信息</legend>
+        <p>
+            <span>下面我们将收集您的一些个人信息，以便我们及时将您的运动健康状况反馈。</span><br>
+        </p>
+        <p><label class="question" for="P26">你的性别？</label>
+            <input type="text" id="P26" name="P26"
+                   placeholder="Enter your real sex."
+                   size="50" required autofocus /></p>
+
+        <p><label class="question" for="P27">你的常用手机号？</label>
+            <input type="tel" id="P27" name="P27"
+                   placeholder="Please use a real one!"
+                   size="50"  required pattern="[0-9]{11}"/></p>
+
+        <p><label class="question" for="P28">你的职业？</label>
+            <input type="text" id="P28" name="P28"
+                   placeholder="Please use a real one!"
+                   size="50" required /></p>
+
+        <p><label class="question" for="P29">你的身高(cm)？</label>
+            <input type="text" id="P29" name="P29"
+                   placeholder="Please use a real one!"
+                   size="50" required /></p>
+
+        <p><label class="question" for="P30">你的体重(kg)？</label>
+            <input type="text" id="P30" name="P30"
+                   placeholder="Please use a real one!"
+                   size="50" required /></p>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>工作时的体力活动</legend>
+
+        <p><span class="question">P1	你的工作需要做剧烈活动以致引起呼吸和心跳显著增加 [ 如搬运或举重物、挖掘或建筑工作 ] 时间至少持续10分钟吗？</span><br/></p>
+        <p><input type="radio" id="P1-Y" name="P1"
+                  value="是的。" onclick="showHide1()" />
+            <label for="P1-Y">是的。</label><br/>
+
+            <input type="radio" id="P1-N" name="P1"
+                   value="不是。" onclick="showHide1()" />
+            <label for="P1-N">不是。(跳转P4）</label><br/></p>
+
+
+
+        <p id="select1"><label for="P2"><span class="question">P2	你的工作中通常每周有多少天会做剧烈活动？</span><br/>
+
+        <select id="P2" name="P2" required>
+            <option>0天</option>
+            <option>1天</option>
+            <option>2天</option>
+            <option>3天</option>
+            <option>4天</option>
+            <option>5天</option>
+            <option>6天</option>
+            <option>7天</option>
+        </select>
+        </label></p>
+
+        <p id="select2"><span class="question">P3	你通常每天工作中做多长时间的剧烈活动？
+       </span><br/>
+            <input type="range" id="P3" name="P3" min="0" max="24" step="0.5" class="test" required/>
+            <span class="test1">0</span>
+            <label for="P3">小时</label><br/></p>
+        <HR>
+
+
+
+        <p><span class="question">P4	你的工作需要做引起呼吸和心跳轻度增加的中等强度活动，如快步走 [ 搬运较轻的物品 ] 时间至少持续10分钟吗？</span><br/></p>
+
+
+
+        <p><input type="radio" id="P4-Y" name="P4"
+                  value="是的。" onclick="showHide3()"/>
+            <label for="P4-Y">是的。</label><br/>
+
+            <input type="radio" id="P4-N" name="P4"
+                   value="不是。" onclick="showHide3()" />
+            <label for="P4-N">不是。(跳转P7）</label><br/></p>
+
+        <p id="select5"><label for="P5"><span class="question">P5	你通常每周有多少天工作时做中等强度的活动？</span><br/>
+            <select id="P5" name="P5" required>
+                <option>0天</option>
+                <option>1天</option>
+                <option>2天</option>
+                <option>3天</option>
+                <option>4天</option>
+                <option>5天</option>
+                <option>6天</option>
+                <option>7天</option>
+            </select>
+        </label></p>
+
+        <p id="select6"><span class="question">P6 你通常每天工作时做多长时间中等强度的活动？
+        </span><br/>
+            <input type="range" id="P6" name="P6" min="0" max="24" step='0.5' class="test" required/>
+            <span class="test1">0</span>
+            <label for="P6">小时</label><br/></p>
+        <!--<input type="range" id="P15" name="P15" min="0" max="24" step='0.5'class="test" required/>-->
+        <!--<span class="test1">0</span>-->
+        <!--<label for="P15">小时</label><br/></p>-->
+    </fieldset>
+
+    <fieldset>
+        <legend>交通时的体力活动</legend>
+        <p>
+            <span>以下问题不包括上述工作时的体力活动。</span><br>
+            <span>现在我要询问你通常的交通方式。例如，去上班、去购物、去市场等。</span><br>
+        </p>
+        <p><span class="question">P7 你去某个地方时步行或骑自行车至少持续10分钟以上吗？</span><br/>
+            <input type="radio" id="P7-Y" name="P7"
+                   value="是的。" onclick="showHide2()"/>
+            <label for="P7-Y">是的。</label><br/>
+
+            <input type="radio" id="P7-N" name="P7"
+                   value="不是。" onclick="showHide2()"/>
+            <label for="P7-N">不是。(跳转P10）</label><br/>
+
+        <p id="select3"><label for="P8"><span class="question">P8 你通常每周有多少天从一个地点到另一地点步行或骑自行车至少持续10分钟以上?</span><br/>
+            <select id="P8" name="P8" required>
+            <option>0天</option>
+            <option>1天</option>
+            <option>2天</option>
+            <option>3天</option>
+            <option>4天</option>
+            <option>5天</option>
+            <option>6天</option>
+            <option>7天</option>
+            </select>
+        </label></p>
+
+        <p id="select4"><span class="question">P9 你通常每天在交通方面花多少时间步行或骑自行车？
+       </span><br/>
+            <input type="range" id="P9" name="P9" min="0" max="24" step='0.5'class="test" required/>
+            <span class="test1">0</span>
+            <label for="P9">小时</label><br/></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>娱乐性体力活动</legend>
+
+
+        <HR>
+
+        <p><span class="question">P10 你进行引起你呼吸和心跳显著增加的剧烈的运动、健身和娱乐性（休闲）体力活动并至少持续10分钟以上吗？</span><br/></p>
+
+        <p><input type="radio" id="P10-Y" name="P10"
+                  value="是的。" onclick="showHide4()"/>
+            <label for="P10-Y">是的。</label><br/>
+
+            <input type="radio" id="P10-N" name="P10"
+                   value="不是。" onclick="showHide4()"/>
+            <label for="P10-N">不是。(跳转P13）</label><br/></p>
+
+        <p id="select7"><label for="P11"><span class="question">P11 你通常每周有多少天进行剧烈的运动、健身和娱乐性（休闲）体力活动?</span><br/>
+            <select id="P11" name="P11" required>
+                <option>0天</option>
+                <option>1天</option>
+                <option>2天</option>
+                <option>3天</option>
+                <option>4天</option>
+                <option>5天</option>
+                <option>6天</option>
+                <option>7天</option>
+            </select>
+        </label></p>
+
+        <p id="select8"><span class="question">P12 你通常每天花多长时间进行剧烈的运动、健身和娱乐性体力活动？
+       </span><br/>
+            <input type="range" id="P12" name="P12" min="0" max="24" step='0.5'class="test" required/>
+            <span class="test1">0</span>
+            <label for="P12">小时</label><br/></p>
+        <!--<input type="range" id="P15" name="P15" min="0" max="24" step='0.5'class="test" required/>-->
+        <!--<span class="test1">0</span>-->
+        <!--<label for="P15">小时</label><br/></p>-->
+
+        <HR>
+
+
+        <p><span class="question">P13 你进行引起你呼吸和心跳轻度增加的中等强度的运动、健身和娱乐性体力活动（休闲），如快步走（骑自行车、游泳、排球）至少持续10分钟或以上吗？</span><br/></p>
+
+        <p><input type="radio" id="P13-Y" name="P13"
+                  value="是的。" onclick="showHide5()"/>
+            <label for="P13-Y">是的。</label><br/>
+
+            <input type="radio" id="P13-N" name="P13"
+                   value="不是。" onclick="showHide5()"/>
+            <label for="P13-N">不是。(跳转P16）</label><br/></p>
+
+        <p id="select9"><label for="P14"><span class="question">P14 你通常每周有多少天进行中等强度的运动、健身和娱乐性（休闲）体力活动?</span><br/>
+            <select id="P14" name="P14" required>
+                <option>0天</option>
+                <option>1天</option>
+                <option>2天</option>
+                <option>3天</option>
+                <option>4天</option>
+                <option>5天</option>
+                <option>6天</option>
+                <option>7天</option>
+            </select>
+        </label></p>
+
+        <p id="select10"><span class="question">P15 你通常每天花多少时间进行中等强度的运动、健身和娱乐性（休闲）体力活动？
+       </span><br/>
+            <input type="range" id="P15" name="P15" min="0" max="24" step='0.5'class="test" required/>
+            <span class="test1">0</span>
+            <label for="P15">小时</label><br/></p>
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>久坐习惯</legend>
+        <p>
+            <span>以下问题是关于工作时、在家里、交通过程中、会朋友时坐姿或靠着所花费的时间。</span><br>
+            <span>包括坐在桌前，与朋友坐在一起，乘坐轿车、公共汽车、火车，阅读，打扑克或者看电视，但不包括睡觉的时间。</span><br>
+        </p>
+        <p><span class="question">P16 你通常每天有多少时间坐着或靠着？</span><br/>
+            <input type="range" id="P16" name="P16" min="0" max="24" step='0.5'class="test" required/>
+            <span class="test1">0</span>
+            <label for="P16">小时</label><br/></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>每天步数</legend>
+        <p>
+            <span>以下问题是关于您的智能手机每天帮您记录下的行走步数，如果您可以通过以下任何一种途径了解到您每天行走的步数，包括：智能手机自带的计步软件、微信运动、支付宝运动，行走记录等。</span><br>
+        </p>
+
+        <p><span class="question">P17 你是否可以通过智能手机得知您每天的行走步数？</span><br/></p>
+        <input type="radio" id="P17-Y" name="P17"
+               value="是的。" onclick="showHide6()"/>
+        <label for="P17-Y">是的。</label><br/>
+
+        <input type="radio" id="P17-N" name="P17"
+               value="不是。" onclick="showHide6()" />
+        <label for="P17-N">不是。(跳过P18,P19）</label><br/>
+
+        <p id="select11"><label for="P18"><span class="question">P18 你在正常工作日的每天的平均行走步数是多少步?</span><br/></label>
+            <input type="text" id="P18" name="P18" required/>步</p>
+
+        <p id="select12"><label for="P19"><span class="question">P19 你在周末的每天的平均行走步数是多少步?</span><br/></label>
+            <input type="text" id="P19" name="P19" required/>步</p>
+    </fieldset>
+
+
+
+    <fieldset id="f1">
+        <legend>未参加娱乐活动原因</legend>
+        <p><span class="question">当P10，P13均回答“否”时，才需作答本题。</span></p>
+    </fieldset>
+    <fieldset id="f">
+        <legend>未参加娱乐活动原因</legend>
+
+        <p>
+            <span>以下问题主要用于未参加娱乐性运动原因的探究。</span><br>
+            <span>如果在你的问卷中P10和P13都选择了不是，说明你平时基本不参加运动、健身和娱乐性体力活动（休闲），以下问题需要你从个人的角度分享不参加娱乐性运动的原因。</span><br>
+        </p>
+
+        <p><span class="question">P20 你不参与娱乐性运动的原因？</span><br/>
+            <input type="checkbox" id="P20-1" name="P20" value="1"/>
+            <label for="P20-1">1. 没有时间。 </label><br/>
+
+            <input type="checkbox" id="P20-2" name="P20" value="2" />
+            <label for="P20-2">2. 工作太累，没有精力。</label><br/>
+
+            <input type="checkbox" id="P20-3" name="P20" value="3" />
+            <label for="P20-2">3. 找不到合适的运动方式。</label><br/>
+
+            <input type="checkbox" id="P20-4" name="P20" value="4" />
+            <label for="P20-2">4. 身体原因，不适合运动。</label><br/>
+
+            <input type="checkbox" id="P20-5" name="P20" value="5" />
+            <label for="P20-2">5. 其他。</label><br/></p>
+
+        <p><span class="question">P21 您是否愿意参加娱乐性运动？</span><br/>
+            <input type="radio" id="P21-Y" name="P21"
+                   value="是的。" />
+            <label for="P21-Y">是的。</label><br/>
+
+            <input type="radio" id="P21-N" name="P21"
+                   value="不是。" />
+            <label for="P21-N">不是。</label><br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>自我运动现状认知</legend>
+        <p>
+            <span>以下问题主要用于自我运动认知的探究。</span><br>
+            <span>主要涉及从你对自己运动现状上在一些维度上的认识。</span><br>
+        </p>
+        <p><label class="question" for="P22">P22 你平时运动的方式主要有？</label>
+            <input type="text" id="P22" name="P22"
+                   size="50" required autofocus /></p>
+
+        <p><span class="question">P23 你认为你平时的运动量是否达到了保证健康的基本水平？</span><br/>
+            <input type="radio" id="23-1" name="23" value="是的。">
+            <label for="23-1">是</label><br/>
+
+            <input type="radio" id="23-2" name="23" value="不是。">
+            <label for="23-2">否</label><br/></p>
+
+        <p><span class="question">P24 相比于同龄人的平均运动量，你认为你的运动量如何？</span><br/>
+            <input type="radio" id="24-1" name="24" value="高。">
+            <label for="24-1">高</label><br/>
+
+            <input type="radio" id="24-2" name="24" value="相等。">
+            <label for="24-2">相等</label><br/></p>
+
+        <input type="radio" id="24-3" name="24" value="低。">
+        <label for="24-3">低</label><br/></p>
+
+        <p><span class="question">P25 相比于身边的人（家人、同事、朋友）的平均运动量，你认为你的运动量如何？</span><br/>
+            <input type="radio" id="25-1" name="25" value="高。">
+            <label for="25-1">高</label><br/>
+
+            <input type="radio" id="25-2" name="25" value="相等。">
+            <label for="25-2">相等</label><br/></p>
+
+        <input type="radio" id="25-3" name="25" value="低。">
+        <label for="25-3">低</label><br/></p>
+    </fieldset>
+
+    <div id="buttons">
+        <input type="submit" class="but" value="提交" />
+    </div>
+
+</form>
 </body>
 </html>

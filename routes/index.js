@@ -21,6 +21,11 @@ router.get('/posttwo',function (req,res) {
     res.render('posttwo',{title:'Express'})
 });
 
+router.get('/test',function (req,res) {
+
+    res.render('test',{title:'Express'})
+});
+
 router.post('/upload', function (req,res) {
 
 
