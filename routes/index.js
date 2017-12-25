@@ -102,6 +102,10 @@ router.post('/upload_post1',function (res,req) {
         q5:res.body.q5,
         q6:res.body.q6,
         q7:res.body.q7,
+        q8:res.body.q8,
+        q9:res.body.q9,
+        q10:res.body.q10,
+        q11:res.body.q11,
         time:Date.now(),
         state:0
     });
