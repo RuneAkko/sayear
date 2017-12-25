@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var UserSchema = new mongoose.Schema({
+var Userpost3 = new mongoose.Schema({
     P1: String,
     P2:String,
     P3:String,
@@ -28,10 +28,21 @@ var UserSchema = new mongoose.Schema({
     P25:String,
     P26:String,
     P27:String,
-    P28:String,
-    P29:String,
-    P30:String,
-    time: Date
+    time: Date,
+    state:Number
 });
 
-mongoose.model('User', UserSchema);
+var Userpost1 = new mongoose.Schema({
+    q1: String,
+    q2:String,
+    q3:String,
+    q4:String,
+    q5:String,
+    q6:String,
+    q7:String,
+    time: Date,
+    state:Number
+});
+
+mongoose.model('User3', Userpost3);
+mongoose.model('User1',Userpost1);

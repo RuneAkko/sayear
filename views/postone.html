@@ -4,137 +4,150 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>健康评价表</title>
+		<title>IPAQ短问卷</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
-		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/cs-select.css" />-->
+		<!--<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />-->
+
+		<!-- css 文件 -->
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css";>
+
+		<!-- jQuery 库 -->
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js";></script>
+
+		<!-- JavaScript 文件 -->
+		<script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js";></script>
+
+		<!-- modernizr.js 文件 -->
+		<script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js";></script>
+
 		<script src="js/modernizr.custom.js"></script>
-		<!--<style type="text/css">-->
-			<!--input{-->
-				<!--font-size: small;-->
-			<!--}-->
-		<!--</style>-->
 	</head>
 	<body>
 		<div class="container">
 
 			<div class="fs-form-wrap" id="fs-form-wrap">
 				<div class="fs-title">
-					<h1>健康云运动健康现状评估问卷</h1>
+					<h1>IPAQ短问卷</h1>
 				</div>
-				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off" method="post" action="/upload_post1">
 					<ol class="fs-fields">
-
-						<!--<li data-input-trigger>-->
-							<!--<label class="fs-field-label fs-anim-upper" for="q6" data-info="剧烈活动，是指高负荷的体力活动（搬运、挖掘、建筑）">在你的[ 工作 ]中，通常每周有几天会剧烈活动（持续10分钟以上）？</label>-->
-							<!--<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">-->
-								<!--<span><input id="q6-0" name="q6" type="radio" value="没有"/><label for="q6-0">0天</label></span>-->
-								<!--<span><input id="q6-1" name="q6" type="radio"/><label for="q6-1">1天</label></span>-->
-								<!--<span><input id="q6-2" name="q6" type="radio"/><label for="q6-2">2天</label></span>-->
-								<!--<span><input id="q6-3" name="q6" type="radio"/><label for="q6-3">3天</label></span>-->
-								<!--<span><input id="q6-4" name="q6" type="radio"/><label for="q6-4">4天</label></span>-->
-								<!--<span><input id="q6-5" name="q6" type="radio"/><label for="q6-5">5天</label></span>-->
-								<!--<span><input id="q6-6" name="q6" type="radio"/><label for="q6-6">6天</label></span>-->
-								<!--<span><input id="q6-7" name="q6" type="radio"/><label for="q6-7">7天</label></span>-->
-							<!--</div>-->
-						<!--</li>-->
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q1">Q1:最近7天内，您有几天做了剧烈的体育活动，像是提重物、挖掘、有氧运动或是快速骑车？</label>
+							<select class="fs-anim-lower" id="q1" name="q1">
+								<option>0天</option>
+								<option>1天</option>
+								<option>2天</option>
+								<option>3天</option>
+								<option>4天</option>
+								<option>5天</option>
+								<option>6天</option>
+								<option>7天</option>
+							</select>
+						</li>
 
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q1">你的性别？</label>
+							<label class="fs-field-label fs-anim-upper" for="q2">Q2:在这其中一天您通常会花多少时间在剧烈的体育活动上</label>
+							<input class="fs-anim-lower" id="q2" name="q2" type="time"/>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q3">Q3:最近7天内，您有几天做了适度的体育活动，像是提轻的物品、以平常的速度骑车或打双人网球？请不要包括走路。</label>
+							<select class="fs-anim-lower" id="q3" name="q3">
+								<option>0天</option>
+								<option>1天</option>
+								<option>2天</option>
+								<option>3天</option>
+								<option>4天</option>
+								<option>5天</option>
+								<option>6天</option>
+								<option>7天</option>
+							</select>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q4">Q4:在这其中一天您通常会花多少时间在适度的体育活动上？</label>
+							<input class="fs-anim-lower" id="q4" name="q4" type="time"/>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q5">Q5:最近7天内，您有几天是步行，且一次步行至少10分钟？</label>
+							<select class="fs-anim-lower" id="q5" name="q5">
+								<option>0天</option>
+								<option>1天</option>
+								<option>2天</option>
+								<option>3天</option>
+								<option>4天</option>
+								<option>5天</option>
+								<option>6天</option>
+								<option>7天</option>
+							</select>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q6">Q6:在这其中一天您通常花多少时间在步行上？</label>
+							<input class="fs-anim-lower" id="q6" name="q6" type="time"/>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q7">Q7:最近七天内，工作日您有多久时间是坐着的？</label>
+							<input class="fs-anim-lower" id="q7" name="q7" type="time"/>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q8">Q8:请选择你的性别</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q1-1" name="q1" type="radio" value="没有"/><label for="q6-0">男</label></span>
-								<span><input id="q1-2" name="q1" type="radio"/><label for="q6-1">女</label></span>
+								<span><input id="q8a" name="q8" type="radio"><label for="q8a" class="radio-conversion">男生。</label> </span>
+								<span><input id="q8b" name="q8" type="radio"><label for="q8b" class="radio-mobile">女生。</label> </span>
 							</div>
 						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q2">你的常用手机号？</label>
-							<input class="fs-anim-lower" style="font-size: medium" id="q2" name="q2" type="tel" placeholder="请填入11位真实号码" required pattern="[0-9]{11}"/>
-						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q3">你的职业？</label>
-							<input class="fs-anim-lower" style="font-size: medium" id="q3" name="q3" type="text" required autofocus/>
-						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q4">你的身高？</label>
-							<input class="fs-anim-lower" style="font-size: medium" id="q4" name="q4" type="text" placeholder="单位：厘米" required autofocus/>
-						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q5">你的体重？</label>
-							<input class="fs-anim-lower" style="font-size: medium" id="q5" name="q5" type="text" placeholder="单位：千克" required autofocus/>
-						</li>
-
-
-						<li data-input-trigger>
-							<label class="fs-field-label fs-anim-upper" for="q6" data-info="剧烈活动，是指高负荷的体力活动（搬运、挖掘、建筑）">工作中，通常每周有几天会剧烈活动（持续10分钟以上）？</label>
-							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q6-0" name="q6" type="radio" autocomplete="off"/><label for="q6-0">0天</label></span>
-								<span><input id="q6-1" name="q6" type="radio" autocomplete="off"/><label for="q6-1">1天</label></span>
-								<span><input id="q6-2" name="q6" type="radio" autocomplete="off"/><label for="q6-2">2天</label></span>
-								<span><input id="q6-3" name="q6" type="radio" autocomplete="off"/><label for="q6-3">3天</label></span>
-								<span><input id="q6-4" name="q6" type="radio" autocomplete="off"/><label for="q6-4">4天</label></span>
-								<span><input id="q6-5" name="q6" type="radio" autocomplete="off"/><label for="q6-5">5天</label></span>
-								<span><input id="q6-6" name="q6" type="radio" autocomplete="off"/><label for="q6-6">6天</label></span>
-								<span><input id="q6-7" name="q6" type="radio" autocomplete="off"/><label for="q6-7">7天</label></span>
-							</div>
-						</li>
 
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q7">工作中，如果有剧烈活动的话，通常持续多久？</label>
-							<input class="fs-anim-lower" style="font-size: medium" id="q7" name="q7" type="number" min="0" max="24"  placeholder="请输入数字。不存在剧烈活动请填0。" required autofocus/>
-							<label class="fs-field-label fs-anim-upper" for="q7">小时</label>
+							<label class="fs-field-label fs-anim-upper" for="q9">Q9:请选择你的体重</label>
+							<select class="fs-anim-lower" id="q9" name="q9">
+								<option><40kg</option>
+								<option>41kg</option>
+								<option>42kg</option>
+								<option>43kg</option>
+								<option>44kg</option>
+								<option>45kg</option>
+								<option>46kg</option>
+								<option>47kg</option>
+								<option>48kg</option>
+								<option>49kg</option>
+								<option>50kg</option>
+								<option>51kg</option>
+								<option>52kg</option>
+								<option>53kg</option>
+								<option>54kg</option>
+								<option>55kg</option>
+								<option>56kg</option>
+								<option>57kg</option>
+								<option>58kg</option>
+								<option>59kg</option>
+								<option>60kg</option>
+								<option>61kg</option>
+								<option>62kg</option>
+								<option>63kg</option>
+								<option>64kg</option>
+								<option>65kg</option>
+								<option>66kg</option>
+								<option>67kg</option>
+								<option>68kg</option>
+							</select>
 						</li>
 
-
-						<!--<li data-input-trigger>-->
-							<!--<label class="fs-field-label fs-anim-upper" for="q33" data-info="This will help us know what kind of service you need">你的新网站优先考虑的是什么?</label>-->
-							<!--<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">-->
-								<!--<span><input id="q3b" name="q3" type="radio" value="conversion"/><label for="q3b" class="radio-conversion">Sell things</label></span>-->
-								<!--<span><input id="q3c" name="q3" type="radio" value="social"/><label for="q3c" class="radio-social">Become famous</label></span>-->
-								<!--<span><input id="q3a" name="q3" type="radio" value="mobile"/><label for="q3a" class="radio-mobile">Mobile market</label></span>-->
-							<!--</div>-->
-						<!--</li>-->
-
-						<li data-input-trigger>
-							<label class="fs-field-label fs-anim-upper" data-info="We'll make sure to use it all over">为你的网站挑选一种颜色.</label>
-							<!--<select class="cs-select cs-skin-boxes fs-anim-lower">-->
-							<datalist id="test">
-								<option value="" disabled selected>Pick a color</option>
-								<option value="#588c75" data-class="color-588c75">#588c75</option>
-								<option value="#b0c47f" data-class="color-b0c47f">#b0c47f</option>
-								<option value="#f3e395" data-class="color-f3e395">#f3e395</option>
-								<option value="#f3ae73" data-class="color-f3ae73">#f3ae73</option>
-								<option value="#da645a" data-class="color-da645a">#da645a</option>
-								<option value="#79a38f" data-class="color-79a38f">#79a38f</option>
-								<option value="#c1d099" data-class="color-c1d099">#c1d099</option>
-								<option value="#f5eaaa" data-class="color-f5eaaa">#f5eaaa</option>
-								<option value="#f5be8f" data-class="color-f5be8f">#f5be8f</option>
-								<option value="#e1837b" data-class="color-e1837b">#e1837b</option>
-								<option value="#9bbaab" data-class="color-9bbaab">#9bbaab</option>
-								<option value="#d1dcb2" data-class="color-d1dcb2">#d1dcb2</option>
-								<option value="#f9eec0" data-class="color-f9eec0">#f9eec0</option>
-								<option value="#f7cda9" data-class="color-f7cda9">#f7cda9</option>
-								<option value="#e8a19b" data-class="color-e8a19b">#e8a19b</option>
-								<option value="#bdd1c8" data-class="color-bdd1c8">#bdd1c8</option>
-								<option value="#e1e7cd" data-class="color-e1e7cd">#e1e7cd</option>
-								<option value="#faf4d4" data-class="color-faf4d4">#faf4d4</option>
-								<option value="#fbdfc9" data-class="color-fbdfc9">#fbdfc9</option>
-								<option value="#f1c1bd" data-class="color-f1c1bd">#f1c1bd</option>
-							</datalist>
-
-							<!--</select>-->
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q10">Q10:请填写你的身高</label>
+							<input class="fs-anim-lower" id="q10" name="q10" type="number" placeholder="单位：cm"/>
 						</li>
 
-
-						<!--<li>-->
-							<!--<label class="fs-field-label fs-anim-upper" for="q4">描述你如何评价你的新网站</label>-->
-							<!--<textarea class="fs-anim-lower" id="q4" name="q4" placeholder="Describe here"></textarea>-->
-						<!--</li>-->
-						<!--<li>-->
-							<!--<label class="fs-field-label fs-anim-upper" for="q5">你认为你的网站值多少钱?</label>-->
-							<!--<input class="fs-mark fs-anim-lower" id="q5" name="q5" type="number" placeholder="1000" step="100" min="100"/>-->
-						<!--</li>-->
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q11">请填写您的手机号，以便我们能及时告知诊断结果。</label>
+							<input class="fs-anim-lower" id="q11" name="q11" type="number" placeholder="输入11位数字"/>
+						</li>
 					</ol><!-- /fs-fields -->
 					<button class="fs-submit" type="submit">提交问卷</button>
 				</form><!-- /fs-form -->
