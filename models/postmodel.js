@@ -40,6 +40,10 @@ var Userpost1 = new mongoose.Schema({
     q5:String,
     q6:String,
     q7:String,
+    q8:String,
+    q9:String,
+    q10:String,
+    q11:String,
     time: Date,
     state:Number
 });
