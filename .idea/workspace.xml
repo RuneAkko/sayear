@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/views/consents_postone.html" line="33" />
+    <bookmark url="file://$PROJECT_DIR$/views/consents_shortpost_1.html" line="33" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45764344-d8c1-4b4f-8576-4e33ddd89e47" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/confirm_shortpost_1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/consents_shortpost_a.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/css/component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/css/cs-select.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/css/cs-skin-boxes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/css/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/fonts/codropsicons/codropsicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/fonts/codropsicons/codropsicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/fonts/codropsicons/codropsicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/fonts/codropsicons/codropsicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/fonts/codropsicons/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/img/abacusstar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/img/conversion.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/img/dollar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/img/mobile.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/img/relatedposts/MorphingButtons-300x162.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/img/relatedposts/minimalform1-300x162.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/img/social.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/js/classie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/js/fullscreenForm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/js/modernizr.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/postone/js/selectFx.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/confirm_postone.html" afterPath="$PROJECT_DIR$/views/confirm_shortpost_a.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/consents_postone.html" afterPath="$PROJECT_DIR$/views/consents_shortpost_1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/postone.html" afterPath="$PROJECT_DIR$/views/a.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.html" afterPath="$PROJECT_DIR$/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/post3.html" afterPath="$PROJECT_DIR$/views/post3.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +51,8 @@
       <file leaf-file-name="posttwo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/posttwo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2675">
-              <caret line="622" column="0" lean-forward="false" selection-start-line="622" selection-start-column="0" selection-end-line="622" selection-end-column="0" />
+            <state relative-caret-position="469">
+              <caret line="225" column="7" lean-forward="false" selection-start-line="219" selection-start-column="6" selection-end-line="225" selection-end-column="7" />
               <folding>
                 <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#177#885#0" expanded="false" />
@@ -47,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="108" column="24" lean-forward="true" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+            <state relative-caret-position="500">
+              <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -60,42 +89,50 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="100" column="67" lean-forward="true" selection-start-line="100" selection-start-column="67" selection-end-line="100" selection-end-column="67" />
+            <state relative-caret-position="400">
+              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postone.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/postone.html">
+      <file leaf-file-name="a.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/a.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2239">
-              <caret line="149" column="76" lean-forward="false" selection-start-line="149" selection-start-column="76" selection-end-line="149" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postmodel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/postmodel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="confirm_postone.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/confirm_postone.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="48" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="208">
+              <caret line="585" column="93" lean-forward="false" selection-start-line="585" selection-start-column="93" selection-end-line="585" selection-end-column="93" />
               <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#p#0;n#fieldset#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#li#0;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#li#1;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#1;n#li#1;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#li#3;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#1;n#li#3;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#li#5;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#1;n#li#5;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#li#6;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#1;n#li#6;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confirm_shortpost_a.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/confirm_shortpost_a.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="63" column="76" lean-forward="false" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confirm_shortpost_1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/confirm_shortpost_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="669">
+              <caret line="53" column="79" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="79" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,7 +141,7 @@
         <entry file="file://$PROJECT_DIR$/views/confirm_post3.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
-              <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+              <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#p#0;n#fieldset#0;n#html#0;n#!!top" expanded="true" />
@@ -113,11 +150,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consents_postone.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/consents_postone.html">
+      <file leaf-file-name="error.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/error.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="44" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consents_shortpost_1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/consents_shortpost_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#ol#0;n#li#2;n#ol#0;n#span#1;n#p#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -127,33 +174,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consents_post3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/consents_post3.html">
+      <file leaf-file-name="consents_shortpost_a.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/consents_shortpost_a.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+            <state relative-caret-position="644">
+              <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#ol#0;n#li#2;n#ol#0;n#span#1;n#p#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#span#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/post3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="40" column="21" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="40" selection-end-column="21" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#li#0;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#label#0;n#li#1;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#label#0;n#li#8;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#label#0;n#li#14;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#label#0;n#li#18;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#label#0;n#li#24;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#label#0;n#li#26;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,6 +205,8 @@
       <find>cs-</find>
       <find>fs-progress</find>
       <find>fs-number</find>
+      <find>q7_1</find>
+      <find>q</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,19 +235,24 @@
         <option value="$PROJECT_DIR$/views/posttwo.html" />
         <option value="$PROJECT_DIR$/public/postone/css/component.css" />
         <option value="$PROJECT_DIR$/config/config.js" />
-        <option value="$PROJECT_DIR$/views/post3.html" />
         <option value="$PROJECT_DIR$/public/postone/img/conversion.svg" />
         <option value="$PROJECT_DIR$/public/postone/js/fullscreenForm.js" />
         <option value="$PROJECT_DIR$/views/confirm.html" />
         <option value="$PROJECT_DIR$/views/test.html" />
         <option value="$PROJECT_DIR$/views/consents.html" />
         <option value="$PROJECT_DIR$/views/consents_post3.html" />
-        <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/views/confirm_postone.html" />
         <option value="$PROJECT_DIR$/views/confirm_post3.html" />
-        <option value="$PROJECT_DIR$/views/postone.html" />
         <option value="$PROJECT_DIR$/models/postmodel.js" />
+        <option value="$PROJECT_DIR$/views/post3.html" />
+        <option value="$PROJECT_DIR$/views/postone.html" />
+        <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/views/consents_shortpost_a.html" />
+        <option value="$PROJECT_DIR$/views/consents_shortpost_1.html" />
+        <option value="$PROJECT_DIR$/views/confirm_shortpost_1.html" />
+        <option value="$PROJECT_DIR$/views/confirm_shortpost_a.html" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/a.html" />
       </list>
     </option>
   </component>
@@ -231,7 +267,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="176" />
     <option name="y" value="30" />
     <option name="width" value="2043" />
@@ -348,26 +384,27 @@
       <workItem from="1514041256235" duration="600000" />
       <workItem from="1514125537558" duration="8206000" />
       <workItem from="1514200871278" duration="5514000" />
+      <workItem from="1514209842303" duration="4356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105205000" />
+    <option name="totallyTimeSpent" value="109561000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19072708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5334797" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5334797" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -409,27 +446,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -484,20 +500,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/confirm/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/confirm/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/confirm/css/reset.css" />
+    <entry file="file://$PROJECT_DIR$/public/confirm/scss/style.scss" />
     <entry file="file://$PROJECT_DIR$/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
@@ -607,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -615,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -631,23 +633,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
           <caret line="262" column="11" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="262" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/postmodel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/post3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="273" column="80" lean-forward="true" selection-start-line="273" selection-start-column="20" selection-end-line="273" selection-end-column="80" />
           <folding>
-            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#766#1474#0" expanded="false" />
-            <element signature="e#1505#2213#0" expanded="false" />
-            <element signature="e#2244#2952#0" expanded="false" />
-            <element signature="e#2983#4325#0" expanded="false" />
-            <element signature="e#4356#5633#0" expanded="false" />
-            <element signature="e#5665#6380#0" expanded="false" />
-            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#2;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#3;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#4;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#5;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#input#0;n#p#1;n#fieldset#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#input#1;n#p#1;n#fieldset#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#input#0;n#p#1;n#fieldset#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#li#0;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#1;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#8;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#14;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#18;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#24;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#26;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -655,39 +663,18 @@
     <entry file="file://$PROJECT_DIR$/views/consents_post3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="694">
-          <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <caret line="81" column="62" lean-forward="false" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ol#0;n#li#2;n#ol#0;n#span#1;n#p#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#span#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ol#0;n#li#2;n#ol#0;n#span#1;n#p#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/consents_postone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="44" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ol#0;n#li#2;n#ol#0;n#span#1;n#p#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#span#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="100" column="67" lean-forward="true" selection-start-line="100" selection-start-column="67" selection-end-line="100" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/posttwo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2675">
-          <caret line="622" column="0" lean-forward="false" selection-start-line="622" selection-start-column="0" selection-end-line="622" selection-end-column="0" />
+        <state relative-caret-position="469">
+          <caret line="225" column="7" lean-forward="false" selection-start-line="219" selection-start-column="6" selection-end-line="225" selection-end-column="7" />
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#177#885#0" expanded="false" />
@@ -710,21 +697,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/confirm_postone.html">
+    <entry file="file://$PROJECT_DIR$/views/confirm_shortpost_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="48" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#fieldset#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="669">
+          <caret line="53" column="79" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="79" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/confirm_post3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
-          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#p#0;n#fieldset#0;n#html#0;n#!!top" expanded="true" />
@@ -732,43 +716,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/postone.html">
+    <entry file="file://$PROJECT_DIR$/views/error.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2239">
-          <caret line="149" column="76" lean-forward="false" selection-start-line="149" selection-start-column="76" selection-end-line="149" selection-end-column="76" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/post3.html">
+    <entry file="file://$PROJECT_DIR$/views/consents_shortpost_a.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="40" column="21" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="40" selection-end-column="21" />
+        <state relative-caret-position="644">
+          <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
           <folding>
-            <element signature="n#style#0;n#label#0;n#li#0;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#label#0;n#li#1;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#label#0;n#li#8;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#label#0;n#li#14;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#label#0;n#li#18;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#label#0;n#li#24;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#label#0;n#li#26;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ol#0;n#li#2;n#ol#0;n#span#1;n#p#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/postmodel.js">
+    <entry file="file://$PROJECT_DIR$/views/consents_shortpost_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="544">
+          <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ol#0;n#li#2;n#ol#0;n#span#1;n#p#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/confirm_shortpost_a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="63" column="76" lean-forward="false" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="108" column="24" lean-forward="true" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+        <state relative-caret-position="500">
+          <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="585" column="93" lean-forward="false" selection-start-line="585" selection-start-column="93" selection-end-line="585" selection-end-column="93" />
+          <folding>
+            <element signature="n#li#0;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#li#1;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#1;n#li#1;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#li#3;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#1;n#li#3;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#li#5;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#1;n#li#5;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#li#6;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#1;n#li#6;n#ol#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

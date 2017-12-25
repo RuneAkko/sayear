@@ -9,12 +9,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/postone',function (req,res) {
-  res.render('postone',{title:'Express'})
+router.get('/a',function (req,res) {
+  res.render('a',{title:'Express'})
 });
 
-router.get('/confirm_postone',function (req,res) {
-    res.render('confirm_postone',{title:'Express'})
+router.get('/confirm_shortpost_a',function (req,res) {
+    res.render('confirm_shortpost_a',{title:'Express'})
 })
 
 router.get('/confirm_post3',function (req,res) {

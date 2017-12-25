@@ -40,6 +40,14 @@
     a{
       text-align: center;
     }
+
+    input.but {
+      margin-top: 20px;
+      margin-left: 45%;
+      width: 10%;
+      font-size: 125%;
+      /*text-align: center;*/
+    }
   </style>
 </head>
 <p>
@@ -51,7 +59,11 @@
     <span>本调研由中国国家自然科学基金委委托施行，旨在评价中国公民健康运动水平，需要您填写一份短问卷（3分钟）。填写之后，您将收到您的健康运动水平的综合得分，以及在全国的综合排名供您参考。此外，我们将按1%的概率随机抽取参与者送出100元话费。</span><br>
     <span>本问卷是联合国教科文组织制定的评价个体健康运动水平的标准问卷。填写实行匿名制，填写内容将按照联合国教科文组织标准分析程序进行分析。调查结果仅作为本人健康水平告知及科研用途，不会对第三方扩散您的回答。请您按照自己的真实情况填写。谢谢参与！</span><br>
       <hr>
-    <span>我已阅读<a href="/consents_postone">知情同意书</a>内容，并<a href="/postone">同意参与本次调研。</a></span><br>
+    <span>我已阅读<a href="/consents_shortpost_a">知情同意书</a>内容，并同意参与本次调研。</span><br>
+    <div id="buttons">
+    <input type="submit" class="but" value="继续" onclick="location.href='/a'"/>
+    </div>
+
   </p>
 </fieldset>
 
